@@ -89,31 +89,54 @@ nav > a:hover{
     color: var(--cor2);
 }
 
-menu > nav#esquerda {
+ menu > nav#esquerda {
     margin-left: 40px;
 }
 
-nav > div#inicio > a{
+#esquerda > #inicio > a{
+    color: var(--cor2);
+    padding: 10px;
+    padding-left: 6px;
+    border-radius: 30px; /*BORDINHA DE 30 PIXELS NO MENU*/
+    text-decoration: none;
+    transition-duration: 0.5s; /* VAI DEMORAR MEIO SEGUNDO PARA SUMIR A MARCAÇÃO EM CIMA DO MENU AO PASSAR O CURSOR EM CIMA*/
+} 
+
+#esquerda > #inicio:hover{
+    background-color: rgba(49, 47, 47, 0.678);
+    color: var(--cor2);
+    border-radius: 30px;
+    padding-left: 9px;
+}
+
+#esquerda > #agora > a{
+    color: var(--cor2);
+    padding: 10px;
+    padding-left: 2px;
+    border-radius: 30px; /*BORDINHA DE 30 PIXELS NO MENU*/
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#esquerda > #agora:hover{
+    background-color: rgba(49, 47, 47, 0.678);
+    color: var(--cor2);
+    border-radius: 30px;
+    padding-left: 9px;
+}
+
+/* nav > div#agora > a{
     gap: 5px;
     color: var(--cor2);
     padding: 10px;
     border-radius: 30px; /*BORDINHA DE 30 PIXELS NO MENU*/
-    text-decoration: none;
+    /*text-decoration: none;
     transition-duration: 0.5s; /* VAI DEMORAR MEIO SEGUNDO PARA SUMIR A MARCAÇÃO EM CIMA DO MENU AO PASSAR O CURSOR EM CIMA*/
-}
+/*} */
 
-nav > div#agora > a{
-    gap: 5px;
-    color: var(--cor2);
-    padding: 10px;
-    border-radius: 30px; /*BORDINHA DE 30 PIXELS NO MENU*/
-    text-decoration: none;
-    transition-duration: 0.5s; /* VAI DEMORAR MEIO SEGUNDO PARA SUMIR A MARCAÇÃO EM CIMA DO MENU AO PASSAR O CURSOR EM CIMA*/
-}
-
-nav > div#agora > img{
+/* nav > div#agora > img{
    padding-top: 2px;
-}
+} */
 
 menu > nav#direita {
     margin-left: auto; /*EMPURRA ESTE NAV PARA A DIREITA*/
@@ -133,6 +156,23 @@ menu > nav#direita > div > img{
     padding-right: 5px;
 }
 
+
+#esquerda {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#esquerda > div,
+#esquerda > a {
+    margin: -3px -1px;
+    display: flex;
+    align-items: center;
+}
+
+#esquerda img {
+    margin-right: 5px;
+}
 
 
 
