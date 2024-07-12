@@ -7,7 +7,7 @@
     src: url('../fontes/GlobobrandRegular.otf') format('opentype');
 }
 
-/*ABAIXO TEMOS AS VARIÁVEIEIS COM AS CORES UTILIZADAS NESSE PROJETO.*/
+/*ABAIXO TENHO AS VARIÁVEIEIS COM AS CORES UTILIZADAS NESSE PROJETO.*/
 :root{
     --cor0:rgb(15, 15, 15);
     --cor1:rgb(33, 31, 31);
@@ -17,7 +17,7 @@
     --fonte-destaque: "Globo", Times, serif;
 }
 
-/*AQUI DEFINIMOS COMO CONFIGURAÇÃO GLOBAL QUE TODOS OS PELEMENTOS DO HTML INICIARÃO COM MARGEM  DE PADDING IGUAL A 0 PIXELS.*/
+/*AQUI DEFINI COMO CONFIGURAÇÃO GLOBAL QUE TODOS OS PELEMENTOS DO HTML INICIARÃO COM MARGEM  DE PADDING IGUAL A 0 PIXELS.*/
 *{
     margin: 0px;
     padding: 0px;
@@ -123,8 +123,22 @@ nav > a:hover{
     background-color: rgba(49, 47, 47, 0.678);
     color: var(--cor2);
     border-radius: 30px;
-    /* padding-left: 9px; */
     cursor: pointer;
+}
+
+#entrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#entrar:hover #seta{
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+}
+
+#entrar #seta {
+    transition: transform 0.5s;
 }
 
 menu > nav#direita {
@@ -139,12 +153,6 @@ nav#direita > div{
     height: 24px;
     padding: 5px;
 }
-
-menu > nav#direita > div > img{
-    padding-bottom: 32px;
-    padding-right: 5px;
-}
-
 
 #esquerda {
     display: flex;
